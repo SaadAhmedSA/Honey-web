@@ -1,0 +1,88 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    cursor: pointer;
+    list-style-type: none;
+    text-decoration: none;
+}
+#main{
+    background-image:url(https://images.unsplash.com/photo-1571829604981-ea159f94e5ad?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YnJvd24lMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww) ;
+    background-size: cover;
+    display: flex;
+    position: relative;
+    height: 100vh;
+    
+}
+#sidebar{
+    width: 50px;
+    height: 700px;
+
+   margin:25px;
+   border-right:1px solid white;
+   
+}
+#sidebar img{
+    padding-top:20px ;
+    font-size: 10px;
+}
+li{
+    /* display: inline; */
+    writing-mode: vertical-lr ;
+    transform: rotate(180deg);
+ 
+}
+#sidebar a{
+    padding: 20px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+#sidebar a:hover{
+    color: brown;
+}
+#header{
+    margin: 30px;
+    display: flex;
+    justify-content:space-between;
+    /* align-items: center; */
+}
+.fa-solid{
+    color: white;
+    width: 20px;
+    /* padding-left: 20px; */
+   
+}
+p{
+    color: white;
+ font-size: 15px;
+ padding-left: 40px;
+padding-top: 60px;
+ display: inline;
+}
+#content{
+    display: inline-block;
+    margin: 20px;
+    border: 1px sloid black;
+    position: absolute;
+    top: 100px;
+    left: 150px;
+    color: white;
+    font-size: 35px;
+    width: 1000px;
+    height: 500px;
+    animation: up 1s linear  ;
+}
+#content img{
+    width: 500px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+@keyframes up{
+    from{
+        top: 500px;
+    }to{
+        top: 100px;
+    }
+}
